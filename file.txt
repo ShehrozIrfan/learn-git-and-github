@@ -1,0 +1,2 @@
+This is file with some dummy text.
+Today is a wonderful day!

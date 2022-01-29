@@ -1,0 +1,6 @@
+7c7
+<    <title>Say Hello</title>
+---
+>    <title>Updated say Hello</title>
+10a11
+>    <p>It's awesome to learn diff and patch commands.</p>
