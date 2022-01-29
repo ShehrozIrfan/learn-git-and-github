@@ -1,13 +1,5 @@
 # Learn Git and Github
 
-### Installing Git
-- How to check whether you've git installed or not?
-``` git --version ```
-- Installing git on Linux using package manager:
-``` apt install git ``` or ``` yum install git ```
-- Installing git on MacOS:
-Run the command: ``` git --version ```
-If git is not installed then this command will ask you to download and install git.
 ### What is diff and how to use it?
 - diff is used to find the differences between two files.
 - diff -u is used to compare two files, line by line, and have the differing lines compared side-by-side in the same output.
@@ -23,4 +15,12 @@ If git is not installed then this command will ask you to download and install g
   This command will create the differing file with name ```new_hello.diff```
   - #### Step 2: Apply the differences to ```hello.txt``` file
   ``` patch hello.txt < new_hello.diff ```
-  
+
+### Installing Git
+- How to check whether you've git installed or not?
+``` git --version ```
+- Installing git on Linux using package manager:
+``` apt install git ``` or ``` yum install git ```
+- Installing git on MacOS:
+Run the command: ``` git --version ```
+If git is not installed then this command will ask you to download and install git.
