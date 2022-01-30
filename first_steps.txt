@@ -1,0 +1,2 @@
+This is the text file with some dummy text.
+Let's practice the git basic workflow.
