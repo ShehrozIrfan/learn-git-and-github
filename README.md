@@ -24,3 +24,29 @@
 - Installing git on MacOS:
 Run the command: ``` git --version ```
 If git is not installed then this command will ask you to download and install git.
+
+### First steps with Git
+Before we start using Version Control System(VCS), we need to tell git who we are, so we can do this using the config command:
+``` git config --global user.email 'name@example.com  ``` and then ``` git config --global user.name 'Your name' ```
+The ``` --global ``` sets these values for all the git repositories, but we can also set different values for different repositories.
+
+- ### Creating an empty git repository
+``` git init ``` 
+The git init will create an empty git repository.
+- ### Adding the file
+To make git to track our files we will add that file to our project:
+``` git add file_name.txt ```
+It will add the file to the staging area.
+> Staging area or index is a file maintained by Git that contains all of the information about what files and changes are going to go into your next commit.
+
+- ### Checking the status
+``` git status ```
+Using git status we can get the information about current working tree and the pending changes.
+
+- ### Committing the files
+To get the files in the staging area to be committed in the .git directory we use ``` git commit ``` command. It will open the default editor and ask for commit message. After writing the commit message, save the changes and you're done with your first commit.
+If you don't want to open the editor for writing the commit message, then you can also commit using ``` -m ```:
+``` git commit -m 'This is some commit message' ```
+
+- ### Checking the history of commits
+``` git log ```
