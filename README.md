@@ -50,3 +50,10 @@ If you don't want to open the editor for writing the commit message, then you ca
 
 - ### Checking the history of commits
 ``` git log ```
+
+### Advanced GIT Interaction
+
+- ### Skipping the staging area
+You can skip the staging area by using:
+``` git commit -a -m 'commit message' ```
+the  ``` -a ``` will add all the modified files and then commit. But one things needs to be noted is that ``` -a ``` will only add those files that are modified, it won't add the new files. 
