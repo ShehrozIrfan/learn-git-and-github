@@ -50,6 +50,7 @@ If you don't want to open the editor for writing the commit message, then you ca
 
 - ### Checking the history of commits
 ``` git log ```
+It shows the list of commits in the current git repository.
 
 ### Advanced GIT Interaction
 
@@ -57,3 +58,10 @@ If you don't want to open the editor for writing the commit message, then you ca
 You can skip the staging area by using:
 ``` git commit -a -m 'commit message' ```
 the  ``` -a ``` will add all the modified files and then commit. But one things needs to be noted is that ``` -a ``` will only add those files that are modified, it won't add the new files. 
+
+- ### Getting more information about the changes made
+  - ``` git log ``` shows the list of commits in the current git repository. By default it shows the Author, date, and the commit message. But if you want to check what changes are made in the files in that commit then you can use: ``` git log -p ```, the ``` -p ``` flag shows the changes made to the files in the commit with pluses and minuses. The 'p' in ``` -p ``` comes from the patch. And the output is same as ``` diff -u ``` command.
+  - ``` git log -p ``` shows all the commits. But if you want to see the changes made to the specific commit then you can use: ``` git show commit_id ```. This flag will show the changes made to that specific commit. Here ``` commit_id ``` is the id of the commit for which you want to see the changes made.
+  - ``` git log --stat ``` shows the stats about our commit such as how many files are changed and how many lines are added or removed.
+  - ``` git diff ``` shows the changes made to the files, the output is same as the command ``` diff -u ```. But ``` git diff ``` only shows the changes that are unstaged. So, when you've staged your changes then ``` git diff ``` won't show anything. Now you have to use ``` git diff --staged ``` to see the changes made or staged changes.
+
