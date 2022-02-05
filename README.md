@@ -64,4 +64,9 @@ the  ``` -a ``` will add all the modified files and then commit. But one things 
   - ``` git log -p ``` shows all the commits. But if you want to see the changes made to the specific commit then you can use: ``` git show commit_id ```. This flag will show the changes made to that specific commit. Here ``` commit_id ``` is the id of the commit for which you want to see the changes made.
   - ``` git log --stat ``` shows the stats about our commit such as how many files are changed and how many lines are added or removed.
   - ``` git diff ``` shows the changes made to the files, the output is same as the command ``` diff -u ```. But ``` git diff ``` only shows the changes that are unstaged. So, when you've staged your changes then ``` git diff ``` won't show anything. Now you have to use ``` git diff --staged ``` to see the changes made or staged changes.
+  -  ``` git add -p ``` allows a user to interactively review patches to add to the current commit.
+
+- ### Removing and renaming files
+If you want to delete a file from your repository, you can use: ``` git rm file_name ```.
+If you want to rename a file from your repository, you can use: ``` git mv file_name new_file_name ```
 
