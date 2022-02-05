@@ -1,2 +1,4 @@
 This is the text file with some dummy text.
 Let's practice the git basic workflow.
+======================
+We've made some changes here to check, how we can skip the staging area. Let's see how it works!
