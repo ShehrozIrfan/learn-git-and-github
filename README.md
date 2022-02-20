@@ -85,6 +85,7 @@ If you want to rename a file from your repository, you can use: ``` git mv file_
   - To switch to another existing branch use: ``` git checkout branch_name ```
   - To create a new branch and switch to it immediately: ``` git checkout -b branch_name ```
   - To delete a git branch use: ``` git branch -d branch_name ```
+  - To forcibly delete a branch: ``` git branch -D branch_name ```
   - Let say you are on a branch ``` master ``` and you want to merge ``` new-feature ``` branch into master, you can use: ``` git merge new-feature ```. One thing to remember here is that git merge, merges the files as well as the history of the branches.
   - To better understand the history of your commits use: ``` git log --graph --oneline ```
   - To abort a merge: ``` git merge --abort ```
