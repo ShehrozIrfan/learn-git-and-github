@@ -74,5 +74,5 @@ If you want to rename a file from your repository, you can use: ``` git mv file_
   - Let say you've a file named hello_world.txt and you've made some changes to it. Now it's modified. But now you want to revert the changes then you can do this using: ``` git checkout hello_world.txt```, using this command the file will come to its previous state that was in before making changes.
   - ``` git add * ``` will add all the files to the staging area.
   - To remove the files from the staging area you can use: ``` git reset HEAD hello_world.txt ```, think of reset HEAD as the opposite of git add, as git add, adds the files to the staging area, git reset HEAD removes the files from the staging area.
-  - ### Amending Commits: To ammend the commit, use ``` git commit --amend ``` 
+  - To amend the commit, use ``` git commit --amend ``` 
 
