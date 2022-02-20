@@ -79,3 +79,12 @@ If you want to rename a file from your repository, you can use: ``` git mv file_
   Let say you've made a commit, and now you want to revert it. You can do this using, ``` git revert HEAD ```, what will happen here is that git revert will create a new commit and reverse the changes. For example, a particular line was added in the commit and after the git revert HEAD, this line will be removed from the commit. So, in short git revert HEAD will create a new commit that is the opposite of everything in the given commit. Remember git revert HEAD will only revert the latest commit.
   - You can rollback to a specific commit by using: ``` git revert commit_id ```, you can get the commit_id by using ``` git log ```
 
+- ### Branches
+  - ``` git branch ``` shows a list of all the branches.
+  - To create a new branch use: ``` git branch branch_name ```
+  - To switch to another existing branch use: ``` git checkout branch_name ```
+  - To create a new branch and switch to it immediately: ``` git checkout -b branch_name ```
+  - To delete a git branch use: ``` git branch -d branch_name ```
+  - Let say you are on a branch ``` master ``` and you want to merge ``` new-feature ``` branch into master, you can use: ``` git merge new-feature ```. One thing to remember here is that git merge, merges the files as well as the history of the branches.
+  - To better understand the history of your commits use: ``` git log --graph --oneline ```
+  - To abort a merge: ``` git merge --abort ```
