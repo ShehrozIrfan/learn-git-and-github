@@ -75,4 +75,7 @@ If you want to rename a file from your repository, you can use: ``` git mv file_
   - ``` git add * ``` will add all the files to the staging area.
   - To remove the files from the staging area you can use: ``` git reset HEAD hello_world.txt ```, think of reset HEAD as the opposite of git add, as git add, adds the files to the staging area, git reset HEAD removes the files from the staging area.
   - To amend the commit, use ``` git commit --amend ``` 
+  - ### Rollback
+  Let say you've made a commit, and now you want to revert it. You can do this using, ``` git revert HEAD ```, what will happen here is that git revert will create a new commit and reverse the changes. For example, a particular line was added in the commit and after the git revert HEAD, this line will be removed from the commit. So, in short git revert HEAD will create a new commit that is the opposite of everything in the given commit. Remember git revert HEAD will only revert the latest commit.
+  - You can rollback to a specific commit by using: ``` git revert commit_id ```, you can get the commit_id by using ``` git log ```
 
